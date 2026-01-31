@@ -22,4 +22,6 @@ jobs:
           MONGO_URI: ${{ secrets.MONGO_URI }}
           PORT: ${{ secrets.PORT }}
     - name: test
-      run: curl -s http://localhost:3000/api | grep -q 'hello'
+      run: |
+        sleep 5
+        curl -s http://localhost:3000/api | grep -q 'hello'
