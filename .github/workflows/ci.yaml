@@ -24,7 +24,7 @@ jobs:
     - name: test
       run: |
         for i in {1..10}; do
-          curl -s http://localhost:3000/api | grep -q 'hello' && exit 0
+          curl -s http://localhost:3000/api | grep -q 'helloaaaa' && exit 0
           sleep 2
         done
         exit 1
